@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //setTimeout()
+        /*
+        setTimeout() prendedue argomenti:
+         - una funzione che contiene del codice da eseguire in maniera DIFFERITA
+         - un numero intero di millisecondi che rappresenta la quantità di tempo 
+        */
+
+        setTimeout(function() {
+            console.log("HELLO")
+        }, 2000) // esegue un console.log dopo 2000 millisecondi (ovvero 2 secondi)
+
+        // IN ALTERNATIVA:
+        // 1. Dichiaro la funzione da eseguire
+
+        function delayed() {
+            console.log("hello")
+        }
+
+        // 2. Uso la funzione in setTimeout()
+
+        setTimeout(delayed, 2000)
+
+        /* Come JS gestisce le date
+            in JS abbiamo una classe che si chiama "Date"
+            -> per creare una nuova variabile di classe Date dobbiamo usare il "new"
+
+            es. let now = new Date()
+
+            now.getTime() -> 
+        */
+
+
+
+    </script>
+</body>
+</html>

@@ -7,39 +7,53 @@
 </head>
 <body>
     <script>
-        //setTimeout()
         /*
-        setTimeout() prendedue argomenti:
-         - una funzione che contiene del codice da eseguire in maniera DIFFERITA
-         - un numero intero di millisecondi che rappresenta la quantità di tempo 
+            setTimeout() prende 2 argomenti: 
+                - una funzione che contiene del codice da eseguire in maniera DIFFERITA
+                - un numero intero di millisecondi che rappresenta la quantità di tempo con cui DIFFERIRE l'esecuzione della prima funzione
+        
         */
 
-        setTimeout(function() {
+        setTimeout(function(){
             console.log("HELLO")
-        }, 2000) // esegue un console.log dopo 2000 millisecondi (ovvero 2 secondi)
+        }, 1000) // esegue un console.log dopo 1000 millisecondi cioè dopo un secondo
 
-        // IN ALTERNATIVA:
+        // in questo caso la funzione che fa da 1^argomento al setTimeout è una funzione ANONIMA
+        // non ha un nome
+
+        // In alternativa:
+
         // 1. Dichiaro la funzione da eseguire
 
-        function delayed() {
-            console.log("hello")
+        function delayed(){
+            console.log("HELLO in funzione con name")
         }
 
-        // 2. Uso la funzione in setTimeout()
+        // 2. Uso il nome della funzione in setTimeout
 
-        setTimeout(delayed, 2000)
+        setTimeout(delayed, 2000) // Esegue la funzione dal nome "delayed" dopo 1 secondo
 
-        /* Come JS gestisce le date
+
+        /* Come JS gestisce le date?
             in JS abbiamo una classe che si chiama "Date"
             -> per creare una nuova variabile di classe Date dobbiamo usare il "new"
 
             es. let now = new Date()
 
-            now.getTime() -> 
+
+            now.getTime() -> contiene il numero di millisecondi passati dal 1 gennaio 1970
+
+
+            posso calcolare il tempo trascorso fra 2 oggetti di tipo date:
+
+            let now = new Date()
+            let now2 = new Date()
+
+            let deltaMilliseconds = now2.getTime() - now.getTime()
+
+            let deltaSeconds = deltaMilliseconds/1000
+
         */
-
-
-
     </script>
 </body>
 </html>

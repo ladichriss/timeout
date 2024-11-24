@@ -76,7 +76,7 @@ body {
     font-weight: bold;
 }
 
-.semaforo-rosso {
+.semaforo-1 {
     background-color: red;
     border-radius: 50%;
     height: 200px;
@@ -86,7 +86,7 @@ body {
     border-width: 4px;
 }
 
-.semaforo-giallo {
+.semaforo-2 {
     background-color: yellow;
     border-radius: 50%;
     height: 200px;
@@ -96,7 +96,7 @@ body {
     border-width: 4px;
 }
 
-.semaforo-verde {
+.semaforo-3 {
     background-color: green;
     border-radius: 50%;
     height: 200px;
@@ -104,4 +104,20 @@ body {
     border-color: black;
     border-style: solid;
     border-width: 4px;
+}
+
+.off {
+    background-color: grey;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
 }
